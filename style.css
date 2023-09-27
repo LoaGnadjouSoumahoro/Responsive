@@ -2,23 +2,14 @@
 
         @media screen and (min-width: 769px) {
           body {
-            background-color: blue;
-            font-size: 15px;
+            background-color: rgba(0, 0, 255, 0.462);
             display: flex;
             justify-content: space-between;
             border: 1px ;
       
           }   
-         #medium {
-            display: none;
-        }
-        #small {
-            display: none;
-        }
-     
-      
          div#large{
-        font-size: 50px;
+        
         text-transform: uppercase;
 
         } 
@@ -27,45 +18,71 @@
        
       @media screen and (max-width: 768px) and (min-width :301px) {
         body {
-          background-color: green;
-          font-size: 15px;
+          background-color: rgba(0, 128, 0, 0.386);
+          
 
         }
-        div#small{
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            width: 60%;
-          
-          
-        }
-          #large {
-             display: none;
-         }
-         #small {
-             display: none;
-         }
+      
          div#medium{
-          font-size: 30px;
+          
           text-transform: capitalize;
           
           }
+          
         }
          
          @media screen and (max-width: 300px) {
           body {
-            background-color:red;
+            background-color:rgba(255, 0, 0, 0.417);
           }
-          #medium {
-             display: none;
-         }
-         #large {
-          display: none;
-      }
+          
+      
       div#small{
-        font-size: 15px;
+        
         text-transform: lowercase;
         
         }
+        #small{
+        position: fixed;
+        z-index: 3;
         }
+        #medium{
+        position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 2;
+        }
+        #large{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        }
+      }
+
+      #small{
+      background-color: brown;
+    }
+  #large{
+  background-color: blue;
+  }
+  #medium{
+  background-color: green;
+  }
+      
+    .container{
+    display: flex;
+    justify-content: space-between;
+    }
+    .box{
+    width: 500px;
+    height:auto;
+    border: 2px solid gray;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; 
+    padding: 5px;
+   
+ 
+    }
       

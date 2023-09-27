@@ -3,6 +3,10 @@
         @media screen and (min-width: 769px) {
           body {
             background-color: blue;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px ;
       
           }   
          #medium {
@@ -11,18 +15,29 @@
         #small {
             display: none;
         }
-    
-        div#large{
+     
+      
+         div#large{
         font-size: 50px;
         text-transform: uppercase;
 
-        }
+        } 
+      }
         
-        }
        
       @media screen and (max-width: 768px) and (min-width :301px) {
         body {
           background-color: green;
+          font-size: 15px;
+
+        }
+        div#small{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 60%;
+          
+          
         }
           #large {
              display: none;
@@ -35,7 +50,7 @@
           text-transform: capitalize;
           
           }
-         }
+        }
          
          @media screen and (max-width: 300px) {
           body {
@@ -53,3 +68,4 @@
         
         }
         }
+      
